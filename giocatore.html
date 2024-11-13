@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head lang="it-it">
+        <!--Website Settings-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SSC Napoli - Rosa</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_White.svg" type="png">
+        <script src="js/main.js"></script>
+    </head>
+    <body style="overflow-x: hidden; top: 0;" onload="loadingWebsite()">
+        <div class="loader" style="display: block;" id="loader">
+            <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-05-37_512.gif" alt="" style="scale: 50%; margin-left: 37%; margin-top: 10%;">
+        </div>
+        <div class="main-layer" style="display: none; opacity: 0%;" id="main">
+            <div class="nav-bar" style="height: 75px; width: 140%; background-color: #ffffff; margin-left: -10%; opacity: 100%; margin-top: -0%; position: sticky; color: transparent; top: 0; z-index: 10; border-bottom: thick solid black;">
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_Blu.svg" alt="" style="margin-left: -15%; z-index: 2; height: 75%; width: 50%; margin-top: 0.3%;">
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 32%; margin-top: -2%;" onclick="onClickHome()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">HOME</h2>
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 42%; margin-top: -2%;" onclick="onClickPlayer()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">ROSA</h2>
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 52%; margin-top: -2%;" onclick="onClickMatch()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">MATCH</h2>
+            </div>
+            <div class="banner" style="background-color: #06325F; margin-left: -1%; width: 101.4%; height: 500px;">
+                <h1 style="font-family: Oswald, sans-serif; color: white;text-align: left; font-size: 850%; margin-left: 2%; position: absolute; margin-top: 15%;">LA SQUADRA.</h1>
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_White.svg" alt="" style="position: absolute; margin-left: 90%; margin-top: 15%; width: 10%; opacity: 35%;">
+            </div>
+            <div class="players">
+                <h2 style="font-family: Oswald, sans-serif; color: #06325F;text-align: center; font-size: 550%; margin-left: 6,5%;">I PORTIERI:</h2>
+                <div class="portieri" style="margin-top: -8%;">
+                    <div class="meret">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/MERET.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                        <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">ALEX MERET</h1>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 27 ANNI <br> NAZIONALITA': ITALIA <br> GOAL SUBITI: 8 <br> MINUTI GIOCATI: 846 <br> PORTA INVIOLATA: 5 <br> PRESENZE: 10</h2>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">1</h2>
+                    </img>
+                    </div>
+                <!---->
+                    <div class="turi">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/TURI.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">CLAUDIO TURI</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 19 ANNI <br> NAZIONALITA': ITALIA <br> GOAL SUBITI: 0 <br> MINUTI GIOCATI: 0 <br> PORTA INVIOLATA: 0 <br> PRESENZE: 0</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">12</h2>
+                        </img>
+                    </div>
+                    <div class="contini">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/CONTINI.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">NIKITA CONTINI</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 28 ANNI <br> NAZIONALITA': ITALIA <br> GOAL SUBITI: 0 <br> MINUTI GIOCATI: 0 <br> PORTA INVIOLATA: 0 <br> PRESENZE: 0</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">14</h2>
+                        </img>
+                    </div>
+                    <div class="caprile">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/CAPRILE.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">ELIA CAPRILE</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 23 ANNI <br> NAZIONALITA': ITALIA <br> GOAL SUBITI: 1 <br> MINUTI GIOCATI: 414 <br> PORTA INVIOLATA: 3 <br> PRESENZE: 5</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">25</h2>
+                        </img>
+                    </div>
+                </div>
+                <h2 style="font-family: Oswald, sans-serif; color: #06325F;text-align: center; font-size: 550%; margin-left: 6,5%;">I DIFENSORI:</h2>
+                <div class="difensori" style="margin-top: -8%;">
+                    <div class="buongiorno" id="buongiorno">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/BUONGIORNO.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                        <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">ALESSANDRO BUONGIORNO</h1>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 25 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 1 <br> MINUTI GIOCATI: 1080 <br> ASSIST: 0 <br> PRESENZE: 12</h2>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">4</h2>
+                    </img>
+                    </div>
+                <!---->
+                    <div class="jesus">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/JUAN-JESUS.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">JUAN JESUS</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 33 ANNI <br> NAZIONALITA': BRASILE/ITALIA <br> GOAL: 1 <br> MINUTI GIOCATI: 169 <br> ASSIST: 0 <br> PRESENZE: 2</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">5</h2>
+                        </img>
+                    </div>
+                    <div class="rrahmani">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/RRAHMANI.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">AMIR RRAHMANI</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 30 ANNI <br> NAZIONALITA': KOSOVO <br> GOAL: 0 <br> MINUTI GIOCATI: 1170 <br> ASSIST: 2 <br> PRESENZE: 13</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">13</h2>
+                        </img>
+                    </div>
+                    <div class="marin">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/RAFA-MARIN.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">RAFA MARÌN</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 22 ANNI <br> NAZIONALITA': SPAGNA <br> GOAL: 0 <br> MINUTI GIOCATI: 90 <br> ASSIT: 0 <br> PRESENZE: 1</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">16</h2>
+                        </img>
+                    </div>
+                    <div class="olivera">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/olivera.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">MATHÌAS OLIVIERA</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 26 ANNI <br> NAZIONALITA': URUGUAY <br> GOAL: 0 <br> MINUTI GIOCATI: 860 <br> ASSIT: 1 <br> PRESENZE: 13</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">17</h2>
+                        </img>
+                    </div>
+                    <div class="dilorenzo">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/DI-LORENZO.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">GIOVANNI DI LORENZO (C)</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 31 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 3 <br> MINUTI GIOCATI: 1170 <br> ASSIT: 1 <br> PRESENZE: 13</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">22</h2>
+                        </img>
+                    </div>
+                    <div class="mazzocchi">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/MAZZOCCHI.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">PASQUALE MAZZOCCHI</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 29 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 0 <br> MINUTI GIOCATI: 548 <br> ASSIT: 0 <br> PRESENZE: 10</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">30</h2>
+                        </img>
+                    </div>
+                    <div class="spinazzola">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/SPINAZZOLA.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">LEONARDO SPINAZZOLA</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 31 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 0 <br> MINUTI GIOCATI: 412 <br> ASSIT: 1 <br> PRESENZE: 10</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">37</h2>
+                        </img>
+                    </div>
+                </div>
+                <h2 style="font-family: Oswald, sans-serif; color: #06325F;text-align: center; font-size: 550%; margin-left: 6,5%;">I CENTROCAMPISTI:</h2>
+                <div class="centrocampisti" style="margin-top: -8%;">
+                    <div class="gilmour">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/billy-gilmour.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                        <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">BILLY GILMOUR</h1>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 23 ANNI <br> NAZIONALITA': SCOZIA <br> GOAL: 0 <br> MINUTI GIOCATI: 483 <br> ASSIST: 0 <br> PRESENZE: 10</h2>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">6</h2>
+                    </img>
+                    </div>
+                    <div class="mctominay">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/scott_mctominay.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">SCOTT MCTOMINAY</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 27 ANNI <br> NAZIONALITA': SCOZIA <br> GOAL: 3 <br> MINUTI GIOCATI: 749 <br> ASSIST: 1 <br> PRESENZE: 10</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">8</h2>
+                        </img>
+                    </div>
+                    <div class="zerbin">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/ZERBIN.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">ALESSIO ZERBIN</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 25 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 0 <br> MINUTI GIOCATI: 34 <br> ASSIST: 0 <br> PRESENZE: 2</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">23</h2>
+                        </img>
+                    </div>
+                    <div class="lobotka">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/LOBOTKA.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">STANISLAV LOBOTKA</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 29 ANNI <br> NAZIONALITA': SLOVACCHIA <br> GOAL: 0 <br> MINUTI GIOCATI: 786 <br> ASSIT: 1 <br> PRESENZE: 10</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">68</h2>
+                        </img>
+                    </div>
+                    <div class="folorunsho" id="folorunsho">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/FOLORUNSHO.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">MICHAEL FOLORUNSHO</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 26 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 0 <br> MINUTI GIOCATI: 23 <br> ASSIT: 0 <br> PRESENZE: 3</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">90</h2>
+                        </img>
+                    </div>
+                    <div class="anguissa">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/ANGUISSA.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">FRANK ZAMBO ANGUISSA</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 28 ANNI <br> NAZIONALITA': CAMERUN <br> GOAL: 1 <br> MINUTI GIOCATI: 1203 <br> ASSIT: 1 <br> PRESENZE: 14</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">99</h2>
+                        </img>
+                    </div>
+                </div>
+                <h2 style="font-family: Oswald, sans-serif; color: #06325F;text-align: center; font-size: 550%; margin-left: 6,5%;">GLI ATTACCANTI:</h2>
+                <div class="attaccanti" style="margin-top: -8%;">
+                    <div class="neres">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/Neres-2.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                        <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">DAVID NERES</h1>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 27 ANNI <br> NAZIONALITA': BRASILE <br> GOAL: 2 <br> MINUTI GIOCATI: 257 <br> ASSIST: 4 <br> PRESENZE: 11</h2>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">7</h2>
+                    </img>
+                    </div>
+                    <div class="lukaku">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/lukaku.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">ROMELU LUKAKU</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 31 ANNI <br> NAZIONALITA': BELGIO <br> GOAL: 4 <br> MINUTI GIOCATI: 737 <br> ASSIST: 5 <br> PRESENZE: 11</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">11</h2>
+                        </img>
+                    </div>
+                    <div class="simeone">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/SIMEONE.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">GIOVANNI SIMEONE</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 29 ANNI <br> NAZIONALITA': ARGENTINA <br> GOAL: 1 <br> MINUTI GIOCATI: 304 <br> ASSIST: 1 <br> PRESENZE: 12</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">18</h2>
+                        </img>
+                    </div>
+                    <div class="politano">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/POLITANO.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">MATTEO POLITANO</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 31 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 1 <br> MINUTI GIOCATI: 987 <br> ASSIT: 0 <br> PRESENZE: 13</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">21</h2>
+                        </img>
+                    </div>
+                    <div class="ngonge">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/NGONGE.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">CYRIL NGONGE</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 24 ANNI <br> NAZIONALITA': BELGIO <br> GOAL: 2 <br> MINUTI GIOCATI: 177 <br> ASSIT: 0 <br> PRESENZE: 6</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">26</h2>
+                        </img>
+                    </div>
+                    <div class="kvaratskhelia" id="kvaratskhelia">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/KVARATSKHELIA.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">KVICHA KVARATSKHELIA</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 23 ANNI <br> NAZIONALITA': GEORGIA <br> GOAL: 5 <br> MINUTI GIOCATI: 962 <br> ASSIT: 2 <br> PRESENZE: 14</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">77</h2>
+                        </img>
+                    </div>
+                    <div class="raspadori">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                            <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/RASPADORI.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                            <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">GIACOMO RASPADORI</h1>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 24 ANNI <br> NAZIONALITA': ITALIA <br> GOAL: 0 <br> MINUTI GIOCATI: 384 <br> ASSIT: 1 <br> PRESENZE: 8</h2>
+                            <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;">81</h2>
+                        </img>
+                    </div>
+                </div>
+                <h2 style="font-family: Oswald, sans-serif; color: #06325F;text-align: center; font-size: 550%; margin-left: 6,5%;">L'ALLENATORE:</h2>
+                <div class="allenatore" style="margin-top: -8%;">
+                    <div class="conte">
+                        <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/CONTE.png" alt="" style="margin-left: -25.5%; transform: scale(0.7);">
+                        <h1 style="font-family: Oswald, sans-serif; color: #06325F; margin-top: -21%; margin-left: 24%; position: absolute; font-size: 550%;">ANTONIO CONTE</h1>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -15%; margin-left: 24%;">ETA': 55 ANNI <br> NAZIONALITA': ITALIA</h2>
+                        <h2 style="font-family: Oswald, sans-serif; color: gray; position: absolute; margin-top: -30%; margin-left: 18.5%; font-size: 550%;"></h2>
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="end-page" style="background-color: #06325F; height: 20.5%; position: absolute; margin-top: -1%; width: 100.6%; margin-left: -0.5%;">
+                <h2 style="font-family:Oswald, sans-serif; text-align: center; color: white;">SSC Napoli, Spa.</h2>
+                <h3 style="font-family:Oswald, sans-serif; text-align: center; color: white;">Website build with HTML, CSS and JS with vs code.</h3>
+                <h3 style="font-family:Oswald, sans-serif; text-align: center; color: white;">Made by Andrea Filice, 3CI</h3>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>

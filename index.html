@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head lang="it-it">
+        <!--Website Settings-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SSC Napoli - Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_White.svg" type="png">
+        <script src="js/main.js"></script>
+    </head>
+    <body style="overflow-x: hidden; top: 0;" onload="loadingWebsite()">
+        <div class="loader" style="display: block;" id="loader">
+            <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-05-37_512.gif" alt="" style="scale: 50%; margin-left: 37%; margin-top: 10%;">
+        </div>
+        <div class="main-layer" style="display: none; opacity: 0%;" id="main">
+            <div class="nav-bar" style="height: 75px; width: 140%; background-color: #ffffff; margin-left: -10%; opacity: 100%; position: sticky; color: transparent; border-bottom: thick solid black; z-index: 10; margin-top: -0.5%; top: 0;">
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_Blu.svg" alt="" style="margin-left: -15%; z-index: 2; height: 75%; width: 50%; margin-top: 0.3%;">
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 32%; margin-top: -2%;" onclick="onClickHome()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">HOME</h2>
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 42%; margin-top: -2%;" onclick="onClickPlayer()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">ROSA</h2>
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 52%; margin-top: -2%;" onclick="onClickMatch()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">MATCH</h2>
+            </div>
+            <div class="main">
+                <video autoplay loop muted style="position: absolute; top: 0; width: 100%; height: 100%; left: 0; object-fit:cover; z-index: -1;">
+                    <source src="https://cdn.sscnapoli.it/wp-content/uploads/2024/11/SSCN-THIRD-KIT_1440X960_WEBSITE.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="presentation-last-match">
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/bg-matches-end.svg" alt="" style="margin-top: 38%; margin-left: 20%;">
+                    <h1 style="position: absolute;margin-top: -16%;margin-left: 20.5%;font-size: 150%;font-family: Oswald, sans-serif ;color: white;">Dom 10 Nov</h1>
+                    <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/07/Serie-A-Sito.png" alt="" style="width: 2%; margin-top: 38.5%; position: absolute; margin-left: -2.5%;">
+                    <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/07/Inter-1.png" alt="" style="position: absolute; width: 5%; margin-top: 43.5%; margin-left: -13.5%;">
+                    <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/07/LogoNapoli-1.png" alt="" style="position: absolute; width: 5%; margin-top: 43.5%; margin-left: -9%;">
+                    <h2 style="position: absolute;margin-top: -10%;margin-left: 22%;font-size: 250%;font-family: Oswald, sans-serif ;color: white;">1</h2>
+                    <h2 style="position: absolute;margin-top: -10%;margin-left: 34%;font-size: 250%;font-family: Oswald, sans-serif ;color: white;">1</h2>
+                    <h2 style="position: absolute;margin-top: -2%;margin-left: 21%;font-family:'Work Sans', sans-serif;color: white;">12A Giornata</h2>
+                </img>
+            </div>
+            <div class="presentation-next-match" style="margin-top: -44.8%; margin-left: 27%;">
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/bg-matches-next.svg" alt="" style="margin-top: 38%; margin-left: 20%;" draggable="false">
+                    <h1 style="position: absolute;margin-top: -4%;margin-left: 16%;font-family: Oswald, sans-serif ;color: white; font-size: 250%;">DOMENICA 24 NOVEMBRE, ORE 18:00</h1>
+                    <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/07/Serie-A-Sito.png" alt="" style="width: 2%; margin-top: 28.5%; position: absolute; margin-left: -2.5%;">
+                    <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/07/LogoNapoli-1.png" alt="" style="position: absolute; width: 7%; margin-top: 32%; margin-left: -28%;">
+                    <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/07/Roma-1.png" alt="" style="position: absolute; width: 7%; margin-top: 32%; margin-left: -21%;">
+                    <h2 style="position: absolute;margin-top: -16%;margin-left: 45%;font-family:'Work Sans', sans-serif;color: white;">13A Giornata</h2>
+                </img>
+            </div>
+            <br>
+            <a href="match.html" style="font-family:Oswald, sans-serif; font-size: 200%; margin-left: 39%;">Guarda tutti i MATCH in programma!</a>
+            <br>
+            <br>
+            <br>
+            <div class="bg" style="opacity: 10%; color: gray; width: 110%; position: absolute; height: 131%; background-image: url(https://cdn.sscnapoli.it/wp-content/uploads/2022/11/texture-sscn_white_png.png); z-index: 0;"></div>
+            <div class="depscription-club-bgColor" style="background-color: #2293cd; margin-left: -0.4%; width: 100.8%; height: 1200px;"></div>
+            <div class="depscription-club" style="position: absolute; z-index: 2; margin-top: -64%;">
+                <h1 style="font-family: Oswald, sans-serif ;color: #06325F;text-align: center; font-size: 550%; z-index: 2;">SSC NAPOLI.</h1>
+                <h2 style="font-family:'Work Sans', sans-serif;color: white; text-align: center; font-size: 200%; margin-left: 2%; margin-right: 2%;">La S.S.C. Napoli S.p.A. è da sempre una delle squadre di calcio più amate in Italia. Come emerge, infatti, da molte indagini di mercato eseguite dalle società specializzate, il club partenopeo può contare su una tifoseria che si colloca ai primi quattro posti in Italia, per il numero e per il forte spirito di appartenenza manifestato dai suoi appassionati.
+    
+                    In oltre ottanta anni di storia, il Napoli ha potuto conquistare un glorioso "palmares", che vanta prestigiosi traguardi raggiunti in Italia ed anche in campo internazionale quali 3 Scudetti - 6 Coppe Italia - 2 Supercoppe Italia - 1 Coppa UEFA, ecc.
+                    
+                    Il periodo più esaltante della storia del Napoli coincide con la seconda metà degli anni ottanta, quando, insieme ad altri prestigiosi campioni, nelle file del Napoli giocò il più forte giocatore del mondo, vale a dire Diego Armando Maradona.</h2>
+                <br>
+                <br>
+                <br>
+                <h1 style="font-family: Oswald, sans-serif ;color: #06325F;text-align: center; font-size: 550%; z-index: 2;">LA MISSIONE.</h1>
+                <h2 style="font-family:'Work Sans', sans-serif;color: white; text-align: center; font-size: 200%; margin-left: 2%; margin-right: 2%; bottom: -8rem;">Il nuovo Napoli di Aurelio De Laurentiis, è una Società con moderni ed ambiziosi programmi, che dal punto di vista sportivo, dopo aver raggiunto in soli 3 anni la promozione in serie A, si pone l’obiettivo della platea internazionale, che è senza dubbio la più adeguata alle dimensioni ed al bacino del Club.
+    
+                    L’obiettivo del Napoli è anche di trasformarsi in poco tempo, in una vera e propria impresa di entertainment, offrendo, in futuro, ai propri tifosi e partner, qualcosa di più di una semplice partita di calcio, accompagnando l'evento sportivo con ampi e qualificati momenti di spettacolo e di intrattenimento.
+                    
+                    Da un punto di vista aziendale, la mission è la creazione della brand equity, cioè la realizzazione di quel complesso mix di elementi, che attraverso il perseguimento di obiettivi legati alla notorietà ed alla fedeltà al brand, alla percezione di qualità, alla differenziazione nell’ambito del mercato competitivo di riferimento, aggiungano valore per consolidare partnership internazionali.</h2>
+                <br>
+                <br>
+            </div>
+            <div class="players" style="background-color: white; margin-left: -1%; width: 101.3%;">
+                <br>
+                <br>
+                <h1 style="font-family: Oswald, sans-serif; color: #06325F;text-align: center; font-size: 550%;">I GIOCATORI.</h1>
+                <div class="players-icons" style="margin-top: -8%;">
+                    <!--Kvaratskhelia-->
+                    <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: 18%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/KVARATSKHELIA.png" alt="" style="margin-left: -25%; transform: scale(0.7);">
+                        <h2 style="font-family: Oswald, sans-serif; color: white; position: absolute; margin-top: -5%; margin-left: 21%;">KVICHA KVARATSKHELIA</h2>
+                    </img>
+                    <!--Buongiorno-->
+                    <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: -3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/08/BUONGIORNO.png" alt="" style="margin-left: -25%; transform: scale(0.7);">
+                        <h2 style="font-family: Oswald, sans-serif; color: white; position: absolute; margin-top: -5%; margin-left: 43.3%;">ALESSANDRO BUONGIORNO</h2>
+                    </img>
+                    <!--Folorunsho-->
+                    <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/meta/player-card-bg.png" alt="" style="margin-left: -3%;">
+                        <img src="https://cdn.sscnapoli.it/wp-content/uploads/2024/09/FOLORUNSHO.png" alt="" style="margin-left: -25%; transform: scale(0.7);">
+                        <h2 style="font-family: Oswald, sans-serif; color: white; position: absolute; margin-top: -5%; margin-left: 67%;">MICHAEL FOLORUNSHO</h2>
+                    </img>
+                    <br>
+                    <a href="giocatore.html" style="font-family:Oswald, sans-serif; font-size: 200%; margin-left: 39%;">Guarda tutti i GIOCATORI della rosa!</a>
+                </div>
+                <br>
+                <br>
+                <div class="end-page" style="background-color: #06325F; height: 20.5%; position: absolute; margin-top: -1%; width: 100.6%;">
+                    <h2 style="font-family:Oswald, sans-serif; text-align: center; color: white;">SSC Napoli, Spa.</h2>
+                    <h3 style="font-family:Oswald, sans-serif; text-align: center; color: white;">Website build with HTML, CSS and JS with vs code.</h3>
+                    <h3 style="font-family:Oswald, sans-serif; text-align: center; color: white;">Made by Andrea Filice, 3CI</h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

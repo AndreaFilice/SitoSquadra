@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head lang="it-it">
+        <!--Website Settings-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SSC Napoli - Partite</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_White.svg" type="png">
+        <script src="js/main.js"></script>
+    </head>
+    <body style="overflow-x: hidden; top: 0;" onload="loadingWebsite()">
+        <div class="loader" style="display: block;" id="loader">
+            <img src="https://cdn.pixabay.com/animation/2022/07/29/03/42/03-42-05-37_512.gif" alt="" style="scale: 50%; margin-left: 37%; margin-top: 10%;">
+        </div>
+        <div class="main-layer" style="display: none; opacity: 0%;" id="main">
+            <div class="nav-bar" style="height: 75px; width: 140%; background-color: #ffffff; margin-left: -10%; opacity: 100%; margin-top: -0%; position: sticky; color: transparent; top: 0; z-index: 10; border-bottom: thick solid black;">
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_Blu.svg" alt="" style="margin-left: -15%; z-index: 2; height: 75%; width: 50%; margin-top: 0.3%;">
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 32%; margin-top: -2%;" onclick="onClickHome()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">HOME</h2>
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 42%; margin-top: -2%;" onclick="onClickPlayer()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">ROSA</h2>
+                <h2 style="font-family: Oswald, sans-serif; color: blue; position: absolute; margin-left: 52%; margin-top: -2%;" onclick="onClickMatch()" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">MATCH</h2>
+            </div>
+            <div class="banner" style="background-color: #06325F; margin-left: -1%; width: 101.4%; height: 500px;">
+                <h1 style="font-family: Oswald, sans-serif; color: white;text-align: left; font-size: 850%; margin-left: 2%; position: absolute; margin-top: 15%;">LE PARTITE.</h1>
+                <img src="https://sscnapoli.it/wp-content/themes/Nebula-child/assets/img/new_logo/Logo_Outlined_White.svg" alt="" style="position: absolute; margin-left: 90%; margin-top: 15%; width: 10%; opacity: 35%;">
+            </div>
+            <div class="table">
+                <table border="1" style="font-family: Oswald, sans-serif; transform: scale(1.5); margin-top: 15%; margin-left: 42%;">
+                    <tr>
+                      <th>Giornata</th>
+                      <th>Data</th>
+                      <th>Avversario</th>
+                      <th>Luogo</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>18/08/2024</td>
+                      <td>Hellas Verona</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>25/08/2024</td>
+                      <td>Bologna</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>01/09/2024</td>
+                      <td>Parma</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>15/09/2024</td>
+                      <td>Cagliari</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>22/09/2024</td>
+                      <td>Juventus</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>29/09/2024</td>
+                      <td>Monza</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>06/10/2024</td>
+                      <td>Como</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>20/10/2024</td>
+                      <td>Empoli</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>26/10/2024</td>
+                      <td>Lecce</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>29/10/2024</td>
+                      <td>Milan</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>03/11/2024</td>
+                      <td>Atalanta</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>10/11/2024</td>
+                      <td>Inter</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>24/11/2024</td>
+                      <td>Roma</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>01/12/2024</td>
+                      <td>Torino</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>08/12/2024</td>
+                      <td>Lazio</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>14/12/2024</td>
+                      <td>Udinese</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>21/12/2024</td>
+                      <td>Genoa</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>29/12/2024</td>
+                      <td>Venezia</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>04/01/2025</td>
+                      <td>Fiorentina</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>12/01/2025</td>
+                      <td>Hellas Verona</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>19/01/2025</td>
+                      <td>Atalanta</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>26/01/2025</td>
+                      <td>Juventus</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>02/02/2025</td>
+                      <td>Roma</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>09/02/2025</td>
+                      <td>Udinese</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>16/02/2025</td>
+                      <td>Lazio</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>26</td>
+                      <td>23/02/2025</td>
+                      <td>Como</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>27</td>
+                      <td>02/03/2025</td>
+                      <td>Inter</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>28</td>
+                      <td>09/03/2025</td>
+                      <td>Fiorentina</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>29</td>
+                      <td>16/03/2025</td>
+                      <td>Venezia</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>30</td>
+                      <td>23/03/2025</td>
+                      <td>Milan</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>31</td>
+                      <td>30/03/2025</td>
+                      <td>Bologna</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>32</td>
+                      <td>06/04/2025</td>
+                      <td>Empoli</td>
+                      <td>C</td>
+                    </tr>
+                    <tr>
+                      <td>33</td>
+                      <td>13/04/2025</td>
+                      <td>Monza</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>20/04/2025</td>
+                      <td>Torino</td>
+                      <td>C</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="end-page" style="background-color: #06325F; height: 20.5%; position: absolute; margin-top: 15%; width: 100.6%; margin-left: -1%;">
+                <h2 style="font-family:Oswald, sans-serif; text-align: center; color: white;">SSC Napoli, Spa.</h2>
+                <h3 style="font-family:Oswald, sans-serif; text-align: center; color: white;">Website build with HTML, CSS and JS with vs code.</h3>
+                <h3 style="font-family:Oswald, sans-serif; text-align: center; color: white;">Made by Andrea Filice, 3CI</h3>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
